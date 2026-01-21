@@ -2,10 +2,10 @@ const reciveinput = process.argv[2];
 const pointScore = Number(reciveinput);
 
 if (Number.isNaN(pointScore) || reciveinput === "") {
-    console.log("Invalid Input")
+    console.log("invalid Input")
 }
 else if (pointScore < 0 || pointScore > 100){
-    console.log("Invalid Input")
+    console.log("invalid Input")
 }
 else {
     if (pointScore >= 80){
