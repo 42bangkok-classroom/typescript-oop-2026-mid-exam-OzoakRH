@@ -1,14 +1,18 @@
-export{}
+const input = process.argv[2]
+const numberInput = Number(input)
 
-const Input:number =  Number(process.argv[2]);
-if (Number.isNaN(Input)|| Input <=0){
-  process.exit();
-}
-
-for (let i = 1; i <= Input; i++){
-  let result = '';
-		for(let j = 0; j< i; j++){
-      result += Input 
+if (Number.isNaN(numberInput)) {
+} 
+else if (numberInput <= 0) {
+} 
+else {
+    for (let i = 0; i < numberInput; i++) {
+        let all = "";
+        const leftSpace = numberInput - (i + 1);
+        all += " ".repeat(leftSpace);
+        for (let j = i + 1; j >= 1; j--) {
+            all += j;
+        }
+        console.log(all);
     }
-    console.log(result)
 }
